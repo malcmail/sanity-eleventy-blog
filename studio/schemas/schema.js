@@ -29,6 +29,7 @@ export default createSchema({
     // in the studio.
     siteSettings,
     post,
+    conten_piece,
     category,
     author,
     mainImage,
