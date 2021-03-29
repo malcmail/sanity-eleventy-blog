@@ -9,6 +9,7 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
+import content_piece from './documents/new_type'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
