@@ -1,17 +1,16 @@
-<div class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
-<section class="card-list">
+<ol reversed class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
 {% for post in postslist | reverse %}
-
+<section class="card-list">
       <article class="card">
 
   {% set currentPost = post.data.post %}
-  <p class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     <time class="postlist-date" datetime="{{ currentPost.publishedAt }}">{{ currentPost.publishedAt|readableDate }}</time>
     {{ currentPost.excerpt | markdownify | safe }}
 	Written by {% for author in currentPost.authors %}{{author.name}}{% endfor %} 
-</p>
+</li>
 </article>
 </section>
 {% endfor %}
-</div>
+</ol>

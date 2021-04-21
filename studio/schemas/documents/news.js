@@ -1,9 +1,9 @@
 import {format} from 'date-fns'
 
 export default {
-  name: 'content_piece',
+  name: 'news',
   type: 'document',
-  title: 'REgulzr news',
+  title: 'News',
   fields: [
     {
       name: 'title',

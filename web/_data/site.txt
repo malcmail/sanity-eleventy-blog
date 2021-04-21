@@ -1,0 +1,3 @@
+https://stevepolito.design/blog/create-a-bootstrap-starter-theme-in-eleventy/
+for adding elements for bootstrap
+site.json and shared directory in includes

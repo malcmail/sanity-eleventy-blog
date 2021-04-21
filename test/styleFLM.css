@@ -1,0 +1,354 @@
+:root{
+	--stdfont:12pt;
+}
+
+/* seems irrelevant as body works better 
+corps{
+	color: black;
+	font-size: var(--stdfont);
+	width:60%;
+	
+}
+*/
+body { 
+	padding: 0;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
+	margin: 0;
+	color: black;
+	font-size: var(--stdfont);
+	width:700px;
+	padding-left:175px;
+}
+
+motrep {
+	font-weight: bold;
+}
+preci{
+	background-color: light-grey;
+}
+tpart {
+	font-size:25pt;
+}
+
+tchap {
+	font-size:calc(var(--stdfont) + 6pt);
+	padding-right:20pt;
+}
+
+tpart ttxt {
+	color:blue;
+}
+tchap ::before {
+	content: "\a";
+    white-space: pre;
+}
+
+tpart intr::after {
+	content: "\a";
+    white-space: pre;
+}
+
+rmem {
+	color:green;
+}
+
+no {
+	font-size:calc(var(--stdfont) + 4pt);
+	color: green;
+}
+
+no::after{
+		content: "\a";
+    	white-space: pre;
+}
+
+refdoc2 nom{
+	font-style: italic;
+}
+
+/*refdoc2 nature{
+	color: white;
+}*/
+
+al::after{
+	content: "\a";
+    white-space: pre;
+}
+fond + al{
+	margin-left:53px;
+}
+fond + rattach{
+	margin-left:63px;
+}
+
+
+fond{
+	font-style:italic;
+	margin-left:-170px;
+	
+}
+/*fond::after{
+	content: "\a";
+    white-space: pre;
+}*/
+
+tdmcb {
+	font-size: calc(var(--stdfont) + 4pt);
+	color:brown;
+	text-align: center;
+}
+
+tdmcb::after{
+	content: "\a";
+    white-space: pre;
+}
+
+tsec {
+	font-size:calc(var(--stdfont) + 4pt);
+	text-align:center;
+}
+
+tsec::before{
+	content: "\a\a\a";
+    white-space: pre;
+}
+
+tcmcb {
+	font-size:calc(var(--stdfont) + 4pt);
+	text-align:center;
+}
+
+tdmcb::before{
+	content: "\a";
+    white-space: pre;
+}
+
+temcb {
+	font-size: calc(var(--stdfont) + 2pt);
+	color:black;
+	text-align:center;
+}
+
+temcb::after{
+	content: "\a";
+    white-space: pre;
+}
+
+temcb::before{
+	content: "\a";
+    white-space: pre;
+}
+
+thmcb {
+	font-size: calc(var(--stdfont) + 4pt);
+	color:brown;
+}
+thmcb ttxt{
+	margin-left:0px;
+}
+	
+thmcb::after{
+	content: "\a";
+    white-space: pre;
+}
+
+thmcb::before{
+	content: "\a";
+    white-space: pre;
+}
+
+ti {
+	font-weight: bold;
+}
+
+ti::after{
+	content: "    ";
+    white-space: pre;
+}
+
+rattach{
+		margin-left:0px;
+}
+rattach::after{
+	content: "\a";
+    white-space: pre;
+}
+chapsom::before{
+	content: "\a";
+    white-space: pre;
+}
+chapsom intr::after {
+	content: ".   ";
+	
+}
+chapsom nosom::before {
+	content: " ....... ";
+	
+}
+
+tsecsom{
+	font-weight:bold;
+}
+tsecsom intr{
+	
+	margin: 1px;
+}
+tsecsom::before{
+	content: "\a";
+    white-space: pre;
+}
+
+tcsom intr{
+	
+	margin-left: 20px;
+}
+
+tcsom::before{
+	content: "\a";
+    white-space: pre;
+	
+}
+tdsom intr{
+	margin-left: 40px;
+}
+tdsom::before{
+	content: "\a";
+    white-space: pre;
+}
+
+tesom::before{
+	content: "\a";
+    white-space: pre;
+}
+tesom intr{
+	margin-left: 60px;
+}
+
+ttxt{
+	margin-left:20px;
+}
+
+/*[cache="oui"]{
+	color:white;
+}*/
+preci [cache="oui"]{
+	color:aliceblue;
+}
+ex [cache="oui"]{
+	color:bisque;
+}
+[jp="o"]{
+	font-style:italic;
+}
+
+/*
+NONE OF THIS WORKS AS CAN'T INSERT HTML
+lst[pres="nogr"]{
+	color:green;
+}
+
+lst[pres="nogr"]::before{
+	content: "<ol>";
+}
+
+lst[pres="nogr"]::after{
+	content:  "</ol>";
+}
+
+lst[pres="tir"]::before{
+	content:  "<ul>";
+}
+
+lst[pres="tir"]::after{
+	content: "</ul>";
+}
+item::before{
+	content: "<li>";
+}
+
+item::after{
+	content: "</li>";
+}
+*/
+ital {
+	font-style:italic;
+}
+
+preci { 
+	background-color:aliceblue;
+}
+
+preci::before{
+	content:"MEMO POINT   ";
+	/*border-style:solid;
+	border-radius:5px 5px 8px 8px;
+	border-width:2px 2px 5px 2px;
+	border-shadow:1px 1px 1px 1px;*/
+	background-color:cornflowerblue;
+	white-space: pre;
+	font-style:italic;
+	font-weight:bold;
+	margin-right:10px;
+}
+
+ex::before{content:"EXAMPLE   ";
+	/*border-style:solid;
+	border-radius:5px 5px 8px 8px;
+	border-width:2px 2px 5px 2px;
+	border-shadow:1px 1px 1px 1px;*/
+	background-color:burlywood;
+	white-space: pre;
+	font-style:italic;
+	font-weight:bold;
+	margin-right:10px;
+	
+}
+ex{
+	background-color:bisque;
+}
+
+item::before{
+	content:<li>;
+	white-space: pre;
+}
+item::after{
+	content:</li>;
+	white-space: pre;
+}
+lst::before{
+	content:<ol>;
+}
+lst::after{
+	content:</ol>;
+}
+[pres="nogr"]{
+	content:"- ";
+}
+
+#scrollObject{
+	position:fixed;
+	right: 3vw;
+	bottom:3vh;
+	top:auto;
+	width:7vh;
+	height:auto;
+	transition: 0.1s ease-out;
+}	
+.button{
+background-color: aliceblue; 
+  border: none;
+  color: purple;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}	
+.button1{
+	position:fixed;
+	right:3vw;
+	top:3vh;
+	border-radius: 20px;
+}

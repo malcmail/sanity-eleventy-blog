@@ -5,7 +5,8 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #17141d;
+    background: rgb(94,70,89);
+background: linear-gradient(90deg, rgba(94,70,89,1) 8%, rgba(162,47,136,1) 91%);
     color: white;
     font-family: 'DM Mono', monospace;
 }
@@ -15,7 +16,7 @@ a {
 }
 
 .card-list {
-    display: block;/*flex for across the way*/
+    display: flex;/*block for down the way*/
     padding: 3rem;
     overflow-x: scroll;
 }
@@ -36,8 +37,8 @@ a {
 
 
 .card {
-    height: 150px;/*was 350*/
-    width: 400px;/*was 200*/
+    height: 350px;/*was 150 if swap direction*/
+    width: 200px;/*was 400 if swap direction*/
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
@@ -51,6 +52,8 @@ a {
     clear: both;
     position: relative;
 }
+
+
 
 .card:focus-within~.card, .card:hover~.card {
  /*   transform: translateX(130px);/*Y seems to mean other cards move down - static with card pulling out is better*/
@@ -188,7 +191,7 @@ a {
 
 
 html {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 /*body {
